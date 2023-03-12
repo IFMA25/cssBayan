@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    
+    
+    height: 100%;
+    overflow:visible;
+    background-color:#F8FBD4;
+    
+}
+.mems {
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200em;
+}
+ul {
+    width: 150em;
+    list-style: none;
+
+}
+p {
+    display: inline;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;  
+    font-size: 2em;
+    color: rgb(46, 119, 202);
+}
+
+
+.memslabel  {
+    border: .1em solid rgb(16, 111, 155);
+    font: bold 1.5em Arial;
+    background-color: rgb(92, 207, 241);
+    border-radius: 5%;
+    padding: .1em;
+    display: flex;
+    cursor: pointer;
+    width: 30%;
+    
+}
+.plus {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    
+      
+
+}
+.mem_input {
+    display: none;
+}
+img {
+    width: 20%;
+}
+
+.img_mem {
+ display: flex;
+  height: 0;
+  margin: .1em;
+  overflow: hidden;
+  transition: all 2s ease-in-out; 
+  cursor: pointer; 
+  
+}
+
+
+.memslabel:hover~.imgmem_label>.img_mem {
+    display: flex;
+    height: 22em;
+    transform: matrix(1, 2, 3);
+    overflow: visible;
+    
+  }
+  .memslabel:hover p {
+    color: blueviolet;
+  }
+
+  .mem_input:checked~.imgmem_label>.img_mem {
+    
+    display: flex;
+    height: 20em; 
+    margin: .2em;
+    overflow: visible;
+
+}
+
+.mem_input:checked~memslabel>h2 {
+    transform: rotate(45deg);
+    
+}
+ 
+
