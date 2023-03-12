@@ -19,7 +19,12 @@ body {
 ul {
     width: 150em;
     list-style: none;
+
 }
+p {
+    display: inline;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -39,6 +44,15 @@ ul {
     display: flex;
     cursor: pointer;
     width: 30%;
+    
+}
+.plus {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    
+      
+
 }
 .mem_input {
     display: none;
@@ -52,9 +66,9 @@ img {
   height: 0;
   margin: .1em;
   overflow: hidden;
-
   transition: all 2s ease-in-out; 
   cursor: pointer; 
+  
 }
 
 
@@ -65,6 +79,9 @@ img {
     overflow: visible;
     
   }
+  .memslabel:hover p {
+    color: blueviolet;
+  }
   
   
   .mem_input:checked~.imgmem_label>.img_mem {
@@ -73,6 +90,18 @@ img {
     height: 20em; 
     margin: .2em;
     overflow: visible;
+
+
+    
+}
+.mem_input:active~.img_mem {
+  display: flex;
+  height: 0;
+  margin: .1em;
+  overflow: hidden;
+} 
+.mem_input:checked~span {
+    transform: rotate(45deg);
     
 }
  
