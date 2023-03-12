@@ -82,8 +82,7 @@ img {
   .memslabel:hover p {
     color: blueviolet;
   }
-  
-  
+
   .mem_input:checked~.imgmem_label>.img_mem {
     
     display: flex;
@@ -91,16 +90,9 @@ img {
     margin: .2em;
     overflow: visible;
 
-
-    
 }
-.mem_input:active~.img_mem {
-  display: flex;
-  height: 0;
-  margin: .1em;
-  overflow: hidden;
-} 
-.mem_input:checked~span {
+
+.mem_input:checked~memslabel>h2 {
     transform: rotate(45deg);
     
 }
