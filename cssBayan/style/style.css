@@ -2,21 +2,29 @@ html {
     box-sizing: border-box;
 }
 body {
-    display: flex;
-    flex-direction: column;
+    
+    
+    height: 100%;
+    overflow:visible;
     background-color:#F8FBD4;
     
 }
 .mems {
-    width: 100%;
-    margin: 0 auto;
+     
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 200em;
 }
 ul {
+    width: 150em;
     list-style: none;
 }
 .header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;  
     font-size: 2em;
     color: rgb(46, 119, 202);
 }
@@ -40,26 +48,32 @@ img {
 }
 
 .img_mem {
+ display: flex;
   height: 0;
   margin: .1em;
   overflow: hidden;
-  transition: height 2s ease; 
+
+  transition: all 2s ease-in-out; 
   cursor: pointer; 
 }
 
-/*.memslabel:hover + .img_mem {
-    height: 100em; 
-    transition: height 5s ease;
-    overflow: initial;
-  }*/
-  .mem_input:checked + .img_mem {
+
+.memslabel:hover~.imgmem_label>.img_mem {
     display: flex;
-    height: 25em; 
+    height: 22em;
+    transform: matrix(1, 2, 3);
+    overflow: visible;
+    
+  }
+  
+  
+  .mem_input:checked~.imgmem_label>.img_mem {
+    
+    display: flex;
+    height: 20em; 
     margin: .2em;
     overflow: visible;
-  }
-
-  
-
-
+    
+}
+ 
 
