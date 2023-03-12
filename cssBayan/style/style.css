@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:#F8FBD4;
+    
+}
+.mems {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+.header {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(46, 119, 202);
+}
+
+
+.memslabel  {
+    border: .1em solid rgb(16, 111, 155);
+    font: bold 1.5em Arial;
+    background-color: rgb(92, 207, 241);
+    border-radius: 5%;
+    padding: .1em;
+    display: flex;
+    cursor: pointer;
+    width: 30%;
+}
+.mem_input {
+    display: none;
+}
+img {
+    width: 20%;
+}
+
+.img_mem {
+  height: 0;
+  margin: .1em;
+  overflow: hidden;
+  transition: height 2s ease; 
+  cursor: pointer; 
+}
+
+/*.memslabel:hover + .img_mem {
+    height: 100em; 
+    transition: height 5s ease;
+    overflow: initial;
+  }*/
+  .mem_input:checked + .img_mem {
+    display: flex;
+    height: 25em; 
+    margin: .2em;
+    overflow: visible;
+  }
+
+  
+
+
+
